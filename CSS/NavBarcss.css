@@ -1,6 +1,22 @@
-.UserButton {
-
-}
 .nav {
-    background-color: red;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+.UserButton {
+    color: black;
+}
+.A {
+    margin-left: 20px;
+    display: flex;
+}
+.dropdown {
+    border-radius: 10px;
+    background-color: blue;
+}
+.btn.btn-secondary {
+    background-color: blue;
+    border-radius: 10px;
 }
