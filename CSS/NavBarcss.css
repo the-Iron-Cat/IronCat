@@ -1,5 +1,5 @@
 .nav {
-    border-bottom: solid  2px;
+    border-bottom: solid  2px #0d6efd;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -12,4 +12,31 @@
 .A {
     margin-left: 20px;
     display: flex;
+}
+.bi {
+    color: #0d6efd;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 3px #0d6efd;
+    padding: 5px;
+    transition: .5s;
+}
+
+.bi:hover {
+    cursor: pointer;
+    background-color: #0d6efd;
+    color: white;
+} 
+.OptionContinar {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.language {
+    background-color: #0d6efd;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0  5px;
 }

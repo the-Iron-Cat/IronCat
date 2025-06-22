@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/HomeC.css">
+  <meta charset="UTF-8">
+  <title>تغيير اللغة</title>
+  <style>
+    select {
+      font-size: 16px;
+      padding: 5px 10px;
+    }
+
+    option {
+      padding: 5px;
+    }
+  </style>
 </head>
-
-
 <body>
-    <div class="Name ">
-        <h1>Hello Ahmad Shamy </h1>
-    </div>
+
+  <select id="language" name="language">
+    <option value="en">🇬🇧 English</option>
+    <option value="ar">🇸🇦 العربية</option>
+    <option value="fa">🇮🇷 فارسی</option>
+    <option value="ru">🇷🇺 Русский</option>
+  </select>
+
+  <script>
+    function changeLanguage(lang) {
+      // هنا يمكنك توجيه المستخدم إلى الصفحة المناسبة أو تنفيذ أي منطق برمجي
+      alert("تم اختيار اللغة: " + lang);
+      // مثال: window.location.href = lang + ".html";
+    }
+  </script>
 
 </body>
 </html>
