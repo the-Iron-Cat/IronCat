@@ -2,34 +2,75 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>تغيير اللغة</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card with Animated Cubes</title>
   <style>
-    select {
-      font-size: 16px;
-      padding: 5px 10px;
+    .card-item {
+      position: relative;
+      width: 100%;
+      padding: 30px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
 
-    option {
-      padding: 5px;
+    .cube {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 5px;
+      animation: floatUp linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150%);
+        opacity: 0;
+      }
     }
   </style>
 </head>
 <body>
 
-  <select id="language" name="language">
-    <option value="en">🇬🇧 English</option>
-    <option value="ar">🇸🇦 العربية</option>
-    <option value="fa">🇮🇷 فارسی</option>
-    <option value="ru">🇷🇺 Русский</option>
-  </select>
+  <div class="card-item" style="background-color:#1142B2; color:#fff;">
+    <div class="inner-content-service">
+      <div class="row">
+        <img src="https://api.unitededucation.com.tr/services/معادلة-الشهادة-الجامعية-01.svg" width="110" height="110" alt="logo-service" class="image-service">
+      </div>
+      <div class="row">
+        <h3 class="pb-3">معادلة الشهادات الثانوية والجامعية</h3>
+      </div>
+      <div class="row">
+        <p>
+          يتولى فريقنا معادلة الشهادات الثانوية والجامعية الصادرة من خارج تركيا ليتمكن أصحابها من مزاولة العمل داخل أراضي الجمهورية التركية وفق القوانين الرسمية
+        </p>
+      </div>
 
-  <script>
-    function changeLanguage(lang) {
-      // هنا يمكنك توجيه المستخدم إلى الصفحة المناسبة أو تنفيذ أي منطق برمجي
-      alert("تم اختيار اللغة: " + lang);
-      // مثال: window.location.href = lang + ".html";
-    }
-  </script>
+      <!-- مربعات عشوائية -->
+      <script>
+        const card = document.currentScript.parentElement;
+        for (let i = 0; i < 25; i++) {
+          const cube = document.createElement('div');
+          cube.className = 'cube';
+          cube.style.left = Math.random() * 100 + '%';
+          cube.style.animationDelay = Math.random() * 10 + 's';
+          cube.style.animationDuration = (4 + Math.random() * 8) + 's';
+          card.appendChild(cube);
+        }
+      </script>
+    </div>
+  </div>
 
 </body>
 </html>
