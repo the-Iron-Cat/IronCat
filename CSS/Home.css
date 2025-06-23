@@ -1,8 +1,9 @@
 :root {
-    --Parent-color: #ebedee;
-    --second-color: #0d6efd; 
-    --grandson-color:#e2b100; 
+    --second-color: #243671; 
+    --Parent-color: /*#ebedee*/ #F1F1F2;
+    --grandson-color:#F9CD17; 
 }
+
 .HomeContinar {
     background-color: var(--Parent-color);
     height: 100vh;
