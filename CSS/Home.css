@@ -74,8 +74,6 @@
     width: 300px;
     height: 300px;
 }
-
-
 /****Search Button******/
 .box {
   width: 100%;
@@ -146,4 +144,39 @@
   outline: none;
   border: none;
   background: transparent;
+}
+/****completion-Continar****/
+.completion-Continar {
+    display: flex;
+    justify-content: space-around; 
+    background-color: var(--Parent-color);
+}
+.Box {
+    background-color: transparent;
+    border-radius: 5px; 
+    border: solid var(--second-color) 5px ;
+    padding: 20px;
+    width: 300px ;
+    text-align: center; 
+}
+#da {
+    padding-top: 20px;
+    color: var(--second-color);
+    font-weight: bolder;
+    font-size: 40px;
+}
+#spaId {
+     color: var(--grandson-color);
+     font-weight: bolder;
+     font-size: 40px;
+} 
+#pi {
+    color: #f99e17;
+    font-weight: bolder; 
+    letter-spacing: 1px;
+} 
+.AboutContinar {
+    height: 650px ;
+    background-color: var(--Parent-color);
+    
 }
