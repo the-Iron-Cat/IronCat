@@ -1,5 +1,11 @@
 :root {
+<<<<<<< HEAD
     --Parent-color: #ebedee;
     --second-color: #0d6efd; 
     --grandson-color:#e2b100; 
+=======
+    --second-color: #243671; 
+    --Parent-color: /*#ebedee*/ #F1F1F2;
+    --grandson-color:#F9CD17; 
+>>>>>>> 6d845c89734f6f958ff39a423f1d15bf0a60c40f
 }

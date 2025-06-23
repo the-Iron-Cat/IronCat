@@ -1,9 +1,8 @@
 :root {
-    --second-color: #0d6efd; 
-    --Parent-color: #ebedee;
-    --grandson-color:#e2b100; 
+    --second-color: #243671; 
+    --Parent-color: /*#ebedee*/ #F1F1F2;
+    --grandson-color:#F9CD17; 
 }
-
 
 .nav {
     height: 90px;
@@ -15,21 +14,24 @@
 }
 .nav-link {
     transition: .5s;
+    color: var(--second-color);
 }
+
+
 .nav-link:hover {
     color: var(--grandson-color);
 }
 .A {
     margin-left: 20px;
     display: flex;
-       font-size: 20px;
-       font-weight: bolder;
+    font-size: 20px;
+    font-weight: bolder;
 }
 .bi {
     color: var(--second-color);
     background-color: transparent;
     border-radius: 50%;
-    border: solid 3px var(--main-color);
+    border: solid 3px var(--second-color);
     padding: 5px;
     transition: .5s;
 }
@@ -40,14 +42,16 @@
     color: white;
 } 
 .OptionContinar {
+  
     width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .language {
+     
     background-color: var(--second-color);
-    color: white;
+     color: var(--grandson-color);
     height: 40px;
     border-radius: 10px;
     padding: 0  5px;
@@ -58,17 +62,23 @@
 .language:hover {
     cursor: pointer;
     background-color: var(--second-color);
-
-
 }
 .btn.btn-primary {
     transition: .5s;
     cursor: pointer;
     border: none;
     outline: none;
+    background-color: var(--second-color);
 }
 .btn.btn-primary:hover  {
      background-color: var(--grandson-color);
+}
+.btn.btn-outline-primary {
+    border-color: var(--second-color);
+    color: var(--grandson-color);
+}
+.btn.btn-outline-primary:hover {
+    background-color: var(--second-color);
 }
 
 

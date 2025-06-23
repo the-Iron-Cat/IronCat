@@ -1,9 +1,182 @@
 :root {
-    --Parent-color: #ebedee;
-    --second-color: #0d6efd; 
-    --grandson-color:#e2b100; 
+    --second-color: #243671; 
+    --Parent-color: /*#ebedee*/ #F1F1F2;
+    --grandson-color:#F9CD17; 
 }
 .HomeContinar {
     background-color: var(--Parent-color);
     height: 100vh;
+}
+.ImTitleContinar {
+    padding-top: 100px ;
+    height:730px;
+    display: flex;
+    justify-content: space-around;   
+}
+.FormContinar #forTitle {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    color: var(--second-color);
+    font-weight: bolder; 
+
+}
+.FormContinar .input-box { 
+    width: 100%; 
+    height: 50px;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+.FormContinar .input-box #stage {
+    width: 100% ;
+    height: 100%;
+    outline: none;
+    border: none; 
+    background-color: transparent;
+    border: 3px solid var(--second-color);
+    font-weight: bolder;
+    color: var(--second-color); 
+    padding: 0 15px;
+} 
+.FormContinar {
+    position: relative;
+    top: 70px;
+    background-color: white;
+    width: 500px;
+    height: 360px;
+    padding: 10px; 
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0,.5);
+
+}
+.TitleContinar {
+    position: relative;
+    width: 590px;
+    bottom: 90px;
+    left: 55px;
+   
+}
+#TCO {
+    color: var(--second-color);
+    font-size: 40px;
+}
+#PTCO{
+    color: #f99e17;
+    letter-spacing: 2px;
+    font-weight: bolder;
+
+}
+.ImageHome {
+    width: 300px;
+    height: 300px;
+}
+#IM1 {
+    width: 300px;
+    height: 300px;
+}
+/****Search Button******/
+.box {
+  width: 100%;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+  border-color: var(--second-color);
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: var(--second-color);
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+.SearchButton {
+    position: relative;
+    right: 5px;
+    width: 100%;
+  color: var(--second-color);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+/****completion-Continar****/
+.completion-Continar {
+    display: flex;
+    justify-content: space-around; 
+    background-color: var(--Parent-color);
+}
+.Box {
+    background-color: transparent;
+    border-radius: 5px; 
+    border: solid var(--second-color) 5px ;
+    padding: 20px;
+    width: 300px ;
+    text-align: center; 
+}
+#da {
+    padding-top: 20px;
+    color: var(--second-color);
+    font-weight: bolder;
+    font-size: 40px;
+}
+#spaId {
+     color: var(--grandson-color);
+     font-weight: bolder;
+     font-size: 40px;
+} 
+#pi {
+    color: #f99e17;
+    font-weight: bolder; 
+    letter-spacing: 1px;
+} 
+.AboutContinar {
+    height: 650px ;
+    background-color: var(--Parent-color);
+    
 }
