@@ -175,8 +175,11 @@
     font-weight: bolder; 
     letter-spacing: 1px;
 } 
+.AboutTitle-Continar {
+    background-color: red;
+    width: 700px;
+}
 .AboutContinar {
     height: 650px ;
-    background-color: var(--Parent-color);
-    
+    background-color: var(--Parent-color);   
 }
