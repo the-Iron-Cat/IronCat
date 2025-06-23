@@ -41,14 +41,16 @@
     color: white;
 } 
 .OptionContinar {
+  
     width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .language {
+     
     background-color: var(--second-color);
-    color: white;
+     color: var(--grandson-color);
     height: 40px;
     border-radius: 10px;
     padding: 0  5px;
