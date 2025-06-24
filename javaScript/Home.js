@@ -29,10 +29,12 @@
       startCounting();
     }
   });
+
+
+  // top Button 
 const scrollBtn = document.querySelector(".topButton");
 
   window.onscroll = function () {
-    // إذا نزل المستخدم 300 بكسل أو أكثر
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
       scrollBtn.style.display = "flex";
     } else {

@@ -308,7 +308,7 @@
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #234567;
+  stroke: var(--grandson-color);
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -348,7 +348,7 @@
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  display: none; /* مخفي بالبداية */
+  display: none; /
 }
 
 .svgIcon {
@@ -369,7 +369,6 @@
 }
 
 .topButton:hover .svgIcon {
-  /* width: 20px; */
   transition-duration: 0.3s;
   transform: translateY(-200%);
 }
@@ -379,7 +378,6 @@
   bottom: -20px;
   content: "Back to Top";
   color: white;
-  /* transition-duration: .3s; */
   font-size: 0px;
 }
 
