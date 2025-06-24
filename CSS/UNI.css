@@ -13,7 +13,7 @@
  /* الحاوية للكروت */
     .cards-container {
       display: flex;
-      gap: 80px;
+      gap: 50px;
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 30px;
@@ -101,8 +101,8 @@
 
     .button {
       text-decoration: none;
-      background-color: #1468BF;
-      color: white;
+      background-color: #243671;
+      color: #F9CD17;
       padding: 5px 20px;
       border-radius: 5px;
       border: 1px solid white;
@@ -129,7 +129,7 @@
     }
 
     .button:hover {
-      background-color: #FF6844;
+      background-color: #243671;
       transform: scale(1.1);
     }
 
