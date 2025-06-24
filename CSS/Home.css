@@ -240,13 +240,13 @@
   display: flex;
   width: max-content;
   animation: scrollCards 15s linear infinite;
-  gap: 20px;
+  gap: 100px;
 }
 
 .card1 {
   background-color: blue;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   flex-shrink: 0;
   border-radius: 10px;
 }
