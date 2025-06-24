@@ -15,7 +15,7 @@
 .HomeContinar {
     background-color: var(--Parent-color);
     height: 100vh;
-    margin-top: 20px;
+    margin: 20px;
 }
 .ImTitleContinar {
     padding-top: 100px ;
@@ -225,11 +225,19 @@
 }
 /*******Card Slider**********/
 .Card-Continar {
-  background-color: red;
+    text-align: center;
   height: 470px;
-  text-align: center;
   overflow: hidden;
   position: relative;
+}
+#OurSer {
+  text-align: center;
+  font-size: bolder;
+  color: var(--second-color);
+}
+#POR {
+    color: var(--grandson-color);
+    text-align: center;
 }
 
 .Slider_Card_Continar {
@@ -260,6 +268,7 @@
 /*****Button******/
 /* From Uiverse.io by alexmaracinaru */ 
 .cta {
+    
   position: relative;
   margin: auto;
   padding: 12px 18px;
