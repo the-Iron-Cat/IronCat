@@ -1,8 +1,15 @@
 :root {
-    --second-color: #243671; 
-    --Parent-color: /*#ebedee*/ #F1F1F2;
-    --grandson-color:#F9CD17; 
-}
+      --second-color: #243671;
+      --Parent-color: #F1F1F2;
+      --grandson-color: #F9CD17;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--Parent-color);
+      margin: 20px;
+    }
+  
 .HomeContinar {
     background-color: var(--Parent-color);
     height: 100vh;
