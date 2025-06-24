@@ -7,12 +7,15 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: var(--Parent-color);
-      margin: 20px;
+      margin:  20px;
+     
+
     }
   
 .HomeContinar {
     background-color: var(--Parent-color);
     height: 100vh;
+    margin-top: 20px;
 }
 .ImTitleContinar {
     padding-top: 100px ;
