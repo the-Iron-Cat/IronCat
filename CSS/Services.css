@@ -24,6 +24,13 @@
       color: #F9CD17;
   }
 
+.card-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
 
 /* From Uiverse.io by MikeAndrewDesigner */ 
 .e-card {
@@ -100,7 +107,7 @@
 }
 
 .playing .wave:nth-child(3) {
-  animation-duration: 60s;
+  animation-duration: 80s;
 }
 
 .wave:nth-child(3) {

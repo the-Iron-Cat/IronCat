@@ -401,7 +401,7 @@
   border-top-right-radius: 10px ;
   border-bottom-right-radius: 10px;
   display: flex;
-  justify-content: space-between;
+
 }
 .ImageBorder {
   width: 500px;
@@ -419,6 +419,33 @@
   padding: 10px;
 }
 .StudyTitle {
-  background-color: red;
+  position: relative;
+  left: 100px;
   width:600px;
+}
+#stdyspan {
+  color: var(--grandson-color);
+}
+#sstID {
+  color: var(--second-color);
+  padding: 20px;
+  margin-top: 30px;
+}
+#flag {
+
+  height: 200px;
+  width: 200px;
+}
+#flagImage {
+    position: relative;
+  left: 300px;
+  height: 200px;
+  width: 200px;
+}
+
+#syudtexts {
+  margin-top: 70px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  line-height: 30px;
 }
