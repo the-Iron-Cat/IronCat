@@ -489,14 +489,17 @@
 .UniSlider {
   gap: 20px;
   padding: 20px;
+  width: max-content;
+
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
-  background-color: green;
   display: flex;
   align-items: center;
+    animation: scrollCards 15s linear infinite;
 
 }
+
 @keyframes scrollCards {
   0% {
     transform: translateX(0);
@@ -505,13 +508,12 @@
     transform: translateX(-50%);
   }
 }
+
 .UniSlider::-webkit-scrollbar {
   display: none; /* Chrome */
 }
 
 .card {
-      animation: scrollCards 1s linear infinite;
-
   /* تحديد حجم ثابت للكارت */
   min-width: 280px; /* حجم ثابت للعرض */
   width: 280px;
