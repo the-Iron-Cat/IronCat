@@ -25,18 +25,4 @@ const { href } = require("react-router-dom");
 
 
 
-  // top Button 
-  const scrollBtn = document.querySelector(".topButton");
-
-  window.onscroll = function () {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      scrollBtn.style.display = "flex";
-    } else {
-      scrollBtn.style.display = "none";
-    }
-  };
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
 
