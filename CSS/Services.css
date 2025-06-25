@@ -44,8 +44,7 @@
   opacity: 0.6;
   left: 0;
   top: 0;
-  margin-left: 0%;
-  margin-right: -50%;
+  margin-left: -50%;
   margin-top: -70%;
   background: linear-gradient(744deg,#243671,#243671 ,#ecf0f0);
 }
