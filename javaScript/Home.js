@@ -1,3 +1,5 @@
+const { href } = require("react-router-dom");
+
   let started = false;
   function startCounting() {
     const boxes = document.querySelectorAll('.Box');
@@ -20,19 +22,11 @@
       updateCounter();
     });
   }
-  window.addEventListener("scroll", () => {
-    const section = document.querySelector(".completion-Continar");
-    const sectionTop = section.getBoundingClientRect().top;
 
-    if (sectionTop < window.innerHeight && !started) {
-      started = true;
-      startCounting();
-    }
-  });
 
 
   // top Button 
-const scrollBtn = document.querySelector(".topButton");
+  const scrollBtn = document.querySelector(".topButton");
 
   window.onscroll = function () {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -41,7 +35,8 @@ const scrollBtn = document.querySelector(".topButton");
       scrollBtn.style.display = "none";
     }
   };
-
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+
