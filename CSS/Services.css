@@ -29,7 +29,7 @@
 .e-card {
   margin: 100px auto;
   background: transparent;
-  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
   position: relative;
   width: 600px;
   height: 330px;
@@ -44,15 +44,17 @@
   opacity: 0.6;
   left: 0;
   top: 0;
-  margin-left: -50%;
+  margin-left: 0%;
+  margin-right: -50%;
   margin-top: -70%;
-  background: linear-gradient(744deg,#243671 ,#243671 ,#ecf0f0);
+  background: linear-gradient(744deg,#243671,#243671 ,#ecf0f0);
 }
 
 .icon {
   width: 3em;
   margin-top: -1em;
   padding-bottom: 1em;
+
 }
 
 .infotop {
@@ -62,17 +64,17 @@
   top: 5.6em;
   left: 0;
   right: 0;
-  color: #F9CD17
-  font-weight: 600;
+
 }
 
 .name {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 100;
   position: relative;
-  color: #F9CD17;
   top: 1em;
-  text-align: center;
+  text-transform: lowercase;
+  color: #F9CD17;
+  
 }
 
 .wave:nth-child(2),
@@ -82,28 +84,28 @@
 
 .playing .wave {
   border-radius: 40%;
-  animation: wave 3000ms infinite linear;
+  animation: wave 90s infinite linear;
 }
 
 .wave {
   border-radius: 40%;
-  animation: wave 55s infinite linear;
+  animation: wave 90s infinite linear;
 }
 
 .playing .wave:nth-child(2) {
-  animation-duration: 4000ms;
+  animation-duration:80s;
 }
 
 .wave:nth-child(2) {
-  animation-duration: 50s;
+  animation-duration: 80s;
 }
 
 .playing .wave:nth-child(3) {
-  animation-duration: 5000ms;
+  animation-duration: 60s;
 }
 
 .wave:nth-child(3) {
-  animation-duration: 45s;
+  animation-duration: 60s;
 }
 
 @keyframes wave {
