@@ -52,3 +52,44 @@ RedServesis.addEventListener("click" ,  () => {
   }
 
   autoScroll();
+
+  
+
+
+
+
+ const slider2 = document.getElementById('slider2');
+
+  // نكرر محتوى السلايدر مرتين (نسخة مكررة)
+  slider2.innerHTML += slider2.innerHTML;
+
+  let position2 = 0;
+  let speed2 = 0.5; // السرعة (كلما صغرت أبطأ)
+
+  let animationId;
+
+  function step() {
+    position2 -= speed2;
+
+    // طول المحتوى الفعلي (قبل التكرار)
+    const maxScroll = slider2.scrollWidth / 2;
+
+    if (Math.abs(position) >= maxScroll) {
+      position2 = 0;
+    }
+
+    slider2.style.transform = `translateX(${position2}px)`;
+
+    animationId = requestAnimationFrame(step);
+  }
+
+  step();
+
+  slider2.addEventListener('mouseenter', () => {
+    cancelAnimationFrame(animationId);
+  });
+
+  // استئناف الحركة عند خروج الماوس
+  slider2.addEventListener('mouseleave', () => {
+    step();
+  });
