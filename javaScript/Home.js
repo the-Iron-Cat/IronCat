@@ -30,17 +30,17 @@
     }
   });
 
-// Events
-let RedServesis = document.querySelector(".cta1");
-RedServesis.addEventListener("click" ,  () => {
-  window.location.href = "Services.html";
-})
+
+
+
+
+
   const slider = document.getElementById("slider");
-  slider.innerHTML += slider.innerHTML; // تكرار الكروت لعمل تمرير لا نهائي
+  slider.innerHTML += slider.innerHTML;
 
   let position = 0;
-  const speed = 1; // مقدار التحرك بالبكسل
-  const interval = 20; // كل كم ميلي ثانية يتحرك
+  const speed = 1;
+  const interval = 20;
 
   function autoScroll() {
     position -= speed;
@@ -60,18 +60,16 @@ RedServesis.addEventListener("click" ,  () => {
 
  const slider2 = document.getElementById('slider2');
 
-  // نكرر محتوى السلايدر مرتين (نسخة مكررة)
   slider2.innerHTML += slider2.innerHTML;
 
   let position2 = 0;
-  let speed2 = 0.5; // السرعة (كلما صغرت أبطأ)
+  let speed2 = 0.5; 
 
   let animationId;
 
   function step() {
     position2 -= speed2;
 
-    // طول المحتوى الفعلي (قبل التكرار)
     const maxScroll = slider2.scrollWidth / 2;
 
     if (Math.abs(position) >= maxScroll) {
@@ -93,3 +91,21 @@ RedServesis.addEventListener("click" ,  () => {
   slider2.addEventListener('mouseleave', () => {
     step();
   });
+
+
+
+  // Events
+let RedServesis = document.querySelector(".cta1");
+RedServesis.addEventListener("click" ,  () => {
+  window.location.href = "Services.html";
+});
+
+let toUni = document.getElementById("ScStu");
+toUni.addEventListener("click", () => {
+      window.location.href = "UNI.html";
+});
+
+let ReadMoreStuding = document.querySelector(".cta2");
+ReadMoreStuding.addEventListener("click", () => {
+      window.location.href = "Studying.html";
+});
