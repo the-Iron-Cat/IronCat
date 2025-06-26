@@ -35,25 +35,20 @@ let RedServesis = document.querySelector(".cta1");
 RedServesis.addEventListener("click" ,  () => {
   window.location.href = "Services.html";
 })
-
-
-
-
-
   const slider = document.getElementById("slider");
-
-
-  slider.innerHTML += slider.innerHTML;
+  slider.innerHTML += slider.innerHTML; // تكرار الكروت لعمل تمرير لا نهائي
 
   let position = 0;
+  const speed = 1; // مقدار التحرك بالبكسل
+  const interval = 20; // كل كم ميلي ثانية يتحرك
 
-  function animate() {
-    position -= 1; 
+  function autoScroll() {
+    position -= speed;
     if (Math.abs(position) >= slider.scrollWidth / 2) {
-      position = 0;  
+      position = 0;
     }
     slider.style.transform = `translateX(${position}px)`;
-    requestAnimationFrame(animate);
+    requestAnimationFrame(autoScroll);
   }
 
-  animate();
+  autoScroll();
