@@ -815,6 +815,8 @@
   background-color: var(--second-color);
   height: 500px;
   width: 510px;
+    border-radius: 20px;
+    margin-top: 90px;
   padding: 20px;
 }
 .DivInformation {
@@ -855,6 +857,77 @@
   padding: 5px;
 } 
 
+#countrySelect {
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+}
+#numberForm {
+  width: 100% ;
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+}
+
+.formTitle {
+  color: var(--grandson-color);
+  text-align: center;
+}
+.senbtn {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  width: 100%;
+  border: 3px solid var(--Parent-color);
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: var(--second-color);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.senbtn:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: var(--second-color);
+  z-index: -1;
+}
+
+.senbtn:hover, .senbtn:focus {
+  color: var(--grandson-color);
+}
+
+.senbtn:hover:before, .senbtn:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.senbtn:active {
+  transform: scale(0.9);
+}
 
 
 .radio-input {
@@ -926,7 +999,6 @@
     transform: translateX(0);
   }
 }
-
 
 
 
