@@ -29,12 +29,7 @@
       });
     }
   });
-
-
-
-
-
-
+  
   const slider = document.getElementById("slider");
   slider.innerHTML += slider.innerHTML;
 
