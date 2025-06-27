@@ -128,6 +128,8 @@ height: 250px;
             scale: 1.05;
         }
 
+        
+
         @keyframes scrollCards {
             0% {
                 transform: translateX(0%);
@@ -155,6 +157,7 @@ height: 250px;
   justify-content: center;
   margin-top: 10px;
   padding: 0 180px;
+  
 }
 
 .card2{
@@ -187,10 +190,9 @@ height: 250px;
             transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
         }
 
-        .content2 #cardTitle {
+        .content2 #cardTitle2 {
             font-weight: 700;
-            
-           
+  
             z-index: 1;
             color: var(--grandson-color);
             transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
@@ -201,7 +203,8 @@ height: 250px;
             opacity: 1;
             font-size: 18px;
             color: var(--grandson-color);
-            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1); 
+  
         }
 
         .card2::before {
@@ -222,7 +225,7 @@ height: 250px;
             width: 20%;
         }
 
-        .card2:hover .content2 h1,
+        .card2:hover .content2 h1 ,
         .card2:hover .content2 .heading2 {
             color:#f99e17;
         }
