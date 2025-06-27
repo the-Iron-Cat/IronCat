@@ -23,15 +23,27 @@
       font-weight: 700;
       color: #F9CD17;
   }
-/* From Uiverse.io by gharsh11032000 */ 
+/*******Card Slider**********/
 .card-grid {
-  display: flex;
+    text-align: center;
+  height: 470px;
+  position: relative;
+   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 50px;
+  
 }
-
+#OurSer {
+  text-align: center;
+  font-size: bolder;
+  color: var(--second-color);
+}
+#POR {
+    color: var(--grandson-color);
+    text-align: center;
+}
 
 .card {
   position: relative;
@@ -47,78 +59,95 @@ height: 250px;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
   margin-top: 10%;
 }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 34px;
+            border-radius: 22px;
+            color: #000000;
+            overflow: hidden;
+            background: #ffffff;
+            width: 100%;
+            height: 100%;
+            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 34px;
-  border-radius: 22px;
-  color: #ffffff;
-  overflow: hidden;
-  background: #ffffff;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .content #cardTitle {
+            font-weight: 700;
+            
+           
+            z-index: 1;
+            color: var(--grandson-color);
+            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.content .heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.3;
-  z-index: 1;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .content .heading {
+            z-index: 1;
+            opacity: 1;
+            font-size: 18px;
+            color: var(--grandson-color);
+            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.content .para {
-  z-index: 1;
-  opacity: 0.8;
-  font-size: 18px;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .card::before {
+            content: "";
+            position: absolute;
+            height: 160%;
+            width: 160%;
+            border-radius: inherit;
+            background: linear-gradient(to right, #243671, #243671);
+            transform-origin: center;
+            animation: moving 4.8s linear infinite paused;
+            transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.card::before {
-  content: "";
-  position: absolute;
-  height: 160%;
-  width: 160%;
-  border-radius: inherit;
-  background: #243671;
-  background: linear-gradient(to right, #243671, #243671);
-  transform-origin: center;
-  animation: moving 4.8s linear infinite paused;
-  transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .card:hover::before {
+            animation-play-state: running;
+            z-index: -1;
+            width: 20%;
+        }
 
-.card:hover::before {
-  animation-play-state: running;
-  z-index: -1;
-  width: 20%;
-}
+        .card:hover .content h1,
+        .card:hover .content .heading {
+            color:#f99e17;
+        }
 
-.card:hover .content .heading,
-.card:hover .content .para {
-  color: #000000;
-}
+        .card:hover .content {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
 
-.card:hover {
-  box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
-    0rem 24px 24px rgba(10, 60, 255, 0.09),
-    0rem 55px 33px rgba(10, 60, 255, 0.05),
-    0rem 97px 39px rgba(10, 60, 255, 0.01), 0rem 152px 43px rgba(10, 60, 255, 0);
-  scale: 1.05;
-  color: #000000;
-}
+        .card:hover {
+            box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
+                        0rem 24px 24px rgba(10, 60, 255, 0.09),
+                        0rem 55px 33px rgba(10, 60, 255, 0.05),
+                        0rem 97px 39px rgba(10, 60, 255, 0.01),
+                        0rem 152px 43px rgba(10, 60, 255, 0);
+            scale: 1.05;
+        }
 
-@keyframes moving {
-  0% {
-    transform: rotate(0);
-  }
+        @keyframes scrollCards {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
+        @keyframes moving {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
+
+        
 .card-grid2 {
   display: grid;
  grid-template-columns: repeat(3, 1fr);
@@ -143,77 +172,94 @@ height: 250px;
   margin-top: 10%;
 }
 
+ .content2 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 50px;
+            padding: 34px;
+            border-radius: 22px;
+            color: #000000;
+            overflow: hidden;
+            background: #ffffff;
+            width: 100%;
+            height: 100%;
+            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.content2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  padding: 34px;
-  border-radius: 22px;
-  color: #ffffff;
-  overflow: hidden;
-  background: #ffffff;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .content2 #cardTitle {
+            font-weight: 700;
+            
+           
+            z-index: 1;
+            color: var(--grandson-color);
+            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.content2 .heading2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.3;
-  z-index: 1;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .content2 .heading2 {
+            z-index: 1;
+            opacity: 1;
+            font-size: 18px;
+            color: var(--grandson-color);
+            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.content2 .para {
-  z-index: 1;
-  opacity: 0.8;
-  font-size: 18px;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .card2::before {
+            content: "";
+            position: absolute;
+            height: 160%;
+            width: 160%;
+            border-radius: inherit;
+            background: linear-gradient(to right, #243671, #243671);
+            transform-origin: center;
+            animation: moving 4.8s linear infinite paused;
+            transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
-.card2::before {
-  content: "";
-  position: absolute;
-  height: 160%;
-  width: 160%;
-  border-radius: inherit;
-  background: #243671;
-  background: linear-gradient(to right, #243671, #243671);
-  transform-origin: center;
-  animation: moving 4.8s linear infinite paused;
-  transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
-}
+        .card2:hover::before {
+            animation-play-state: running;
+            z-index: -1;
+            width: 20%;
+        }
 
-.card2:hover::before {
-  animation-play-state: running;
-  z-index: -1;
-  width: 20%;
-}
+        .card2:hover .content2 h1,
+        .card2:hover .content2 .heading2 {
+            color:#f99e17;
+        }
 
-.card2:hover .content2 .heading2,
-.card2:hover .content2 .para {
-  color: #000000;
-}
+        .card2:hover .content2 {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
 
-.card2:hover {
-  box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
-    0rem 24px 24px rgba(10, 60, 255, 0.09),
-    0rem 55px 33px rgba(10, 60, 255, 0.05),
-    0rem 97px 39px rgba(10, 60, 255, 0.01), 0rem 152px 43px rgba(10, 60, 255, 0);
-  scale: 1.05;
-  color: #000000;
-}
+        .card2:hover {
+            box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
+                        0rem 24px 24px rgba(10, 60, 255, 0.09),
+                        0rem 55px 33px rgba(10, 60, 255, 0.05),
+                        0rem 97px 39px rgba(10, 60, 255, 0.01),
+                        0rem 152px 43px rgba(10, 60, 255, 0);
+            scale: 1.05;
+        }
 
-@keyframes moving {
-  0% {
-    transform: rotate(0);
-  }
+        @keyframes scrollCards {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
 
-  100% {
-    transform: rotate(360deg);
-  }
-}
+        @keyframes moving {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        
 
 
 /********Studing***********/

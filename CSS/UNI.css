@@ -46,7 +46,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom: 3px solid #fefefe;
-  background-image: url('../Images/7IM.webp'); /* صورة الخلفية */
+  background-image: url('/Images/bh.webp'); /* صورة الخلفية */
   background-size: cover;  /* لتغطية كامل المساحة */
   background-position: center; /* تمركز الصورة */
   transition: all 0.5s ease;
