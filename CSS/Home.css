@@ -1530,7 +1530,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        /* تعديل صندوق المحتوى */
         .accordion-body {
             background-color: #f8f9fa;
             border-top: 1px solid #dee2e6;
@@ -1538,12 +1537,10 @@
             font-size: 16px;
         }
         
-        /* تعديل الحدود بين العناصر */
         .accordion-item:not(:last-child) {
             border-bottom: none;
         }
         
-        /* تعديل الزر header */
         .accordion-button {
             background-color: #ffffff;
             color: #333;
@@ -1559,15 +1556,14 @@
             box-shadow: none;
         }
         
-        /* hover effect */
         .accordion-button:hover {
             background-color: #e9ecef;
         }
         
-        .accordion-button:not(.collapsed):hover {
-            background-color: #0b5ed7;
-        }
-.accordion-item {
-  margin-bottom: 15px;
-}
+      .accordion-button:not(.collapsed):hover {
+           background-color: #0b5ed7;
+      }
+     .accordion-item {
+       margin-bottom: 15px;
+    }
 
