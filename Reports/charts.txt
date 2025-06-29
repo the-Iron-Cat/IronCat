@@ -1,0 +1,21 @@
+
+fotter مخطط ال    
+/////////////////////////////////////////////
+.Useful link: 
+studying turkey ----> studying.html
+studen housing ----->   studying.html
+contact us ---->  رح تظهر شاشة منبثقة على نفس الصفحة بجانبها الموقع 
+top Universite major ----> Specializations
+Turkish scholarship ----> studying.html
+/////////////////////////////////////////////
+.Pages:
+Home ----> Home.html
+Services ----> Services.html
+Our Schools ----> Our_Schools.html
+Specializations ----> Specializations.html 
+Our universities ----> Our_universities.html 
+////////////////////////////////////////////
+.Important topics:
+Turkish language ----> studying.html
+Turkish universities ----> studying.html
+join us ----> Be our agent.html Single page Application

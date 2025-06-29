@@ -1022,14 +1022,20 @@
 .Fotter_Continar {
   border-top: var(--grandson-color) solid 4px ;
   background-color: var(--second-color);
-  height: 500px;
+  height: 520px;
   margin-top: 100px;
+  
+}
+.Futter_Title_Text {
+  color: var(--grandson-color);
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 50px;
 }
 .Fotter_Body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 50px;
   height: 300px;
 }
 
@@ -1041,15 +1047,33 @@
   padding: 20px;
   font-weight: bolder;
   font-size: 60px;
-  color: var(--grandson-color);
+  color: var(--Parent-color);
 }
 .fotterPraagraph {
-  color: var(--grandson-color);
+  color: var(--Parent-color);
   letter-spacing: 2px;
   font-weight: bolder;
 }
-.fotter_Links {
-  background-color: palevioletred;
+
+.link_Title {
+  text-align: center;
+  font-size: 25px;
+  color: var(--Parent-color);
+  font-weight: bolder;
+}
+.fotter_Links2 {
+  position: relative;
+  bottom: 25px;
+}
+.Site_Box {
+  display: flex;
+  align-items: center;
+}
+.Site_Box .bxr {
+  padding-bottom: 15px;
+  padding-right: 5px;
+  color: var(--Parent-color);
+
 }
 
 .footer-divider {
@@ -1057,10 +1081,94 @@
   background-color: var(--grandson-color); /* رمادي فاتح */
   box-shadow: 0 0 4px var(--grandson-color);
   border: none;
-  margin: 40px auto;
+  margin: 1px auto;
   width: 90%;
+}
+.siteContinar {
+  position: relative;
+  bottom: 12px;
+} 
+.fotterList  {
+  list-style: none;
+
+}
+#T {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder ;
+  transition: .5s;
+} 
+#T:hover {
+  color: var(--grandson-color);
+}
+.siteText { 
+  color: var(--Parent-color);
+  text-decoration: none;
+  font-weight: bolder;
+
+  letter-spacing: 1px;
+}
+.OurSite {
+  color: var(--Parent-color);
+  font-weight: bolder; 
 }
 
 
+.Social_mida {
+  height: 50px;
+  margin-top: 20px;
 
+}
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--second-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #243671;
+  border: 2px solid var(--Parent-color);
+  transition: all 0.45s;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: var(--grandson-color);
+  color: var(--second-color);
+    border: 2px solid var(--grandson-color);
+
+}
+
+.button:hover .btn-svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Fotte_Bottom {
+  background-color: var(--grandson-color);
+  color: var(--second-color);
+  font-weight: bolder; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 40px;
+}
+#copyRighyt {
+  padding-top:20px ;
+}
