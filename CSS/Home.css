@@ -80,12 +80,14 @@
   margin-top: 30px;
     background-color: var(--Parent-color);
     height: 100vh;
+    
 }
 .ImTitleContinar {
     padding-top: 100px ;
     height:730px;
     display: flex;
     justify-content: space-around;   
+    margin-top: 60px;
 }
 .FormContinar #forTitle {
     font-size: 20px;
@@ -224,6 +226,7 @@
     display: flex;
     justify-content: space-around; 
     background-color: var(--Parent-color);
+     margin-top: 60px;
 }
 .Box {
     background-color: transparent;
@@ -1238,3 +1241,95 @@
 #copyRighyt {
   padding-top:20px ;
 }
+
+
+/***whatsapp Button*****/
+.whatsapp-button {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #25D366;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            animation: sway 2s infinite alternate;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 500px;
+            transition: all 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+        
+        .whatsapp-button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .whatsapp-button:hover {
+            transform: translateY(-50%) rotate(360deg) scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+            background-color: #128C7E;
+        }
+        
+        @keyframes sway {
+            0% {
+                transform: translateY(-50%) rotate(-5deg);
+            }
+            100% {
+                transform: translateY(-50%) rotate(5deg);
+            }
+        }
+        
+        .no-link-style {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp-icon {
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+        
+        .whatsapp-button:hover .whatsapp-icon {
+            transform: scale(1.2);
+        }
+        
+        .follow-text {
+            color: white;
+            position: absolute;
+            right: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(37, 211, 102, 0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .whatsapp-button:hover .follow-text {
+            opacity: 1;
+            transform: translateY(-50%) translateX(-10px);
+        }
+
+
+.           
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 20px;

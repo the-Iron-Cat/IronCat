@@ -113,9 +113,9 @@ window.addEventListener('scroll', () => {
 });
 
 
+// top Button
 const backToTopButton = document.getElementById('backToTop');
         
-        // إظهار/إخفاء الزر حسب موضع الصفحة
         window.addEventListener('scroll', function() {
             if (window.scrollY > 200) {
                 backToTopButton.classList.add('show');
@@ -124,10 +124,23 @@ const backToTopButton = document.getElementById('backToTop');
             }
         });
         
-        // العودة لأعلى الصفحة عند النقر
         backToTopButton.addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+
+
+    // whatsapp Button
+
+     window.addEventListener('scroll', function() {
+            const whatsappButton = document.getElementById('whatsappButton');
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollPosition > 200) {
+                whatsappButton.classList.add('show');
+            } else {
+                whatsappButton.classList.remove('show');
+            }
         });
