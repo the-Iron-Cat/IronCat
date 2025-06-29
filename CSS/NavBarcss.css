@@ -1,6 +1,6 @@
 :root {
     --second-color: #243671; 
-    --Parent-color: /*#ebedee*/ #F1F1F2;
+    --Parent-color:  #F1F1F2;
     --grandson-color:#F9CD17; 
 }
 
@@ -11,12 +11,12 @@
     justify-content: space-between;
     padding: 0 50px;
     align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    border-bottom: var(--grandson-color) 5px solid;
     position: fixed;
     top: 0;
     width: 100%;   
     z-index: 999;
-    background-color: var(--Parent-color);
+    background-color: var(--second-color);
     
 
 }
@@ -36,16 +36,13 @@
 
 
 .nav-pills .nav-link.active  {
-    background-color: var(--second-color);
+    background-color: var(--grandson-color);
+    color: var(--second-color);
 } 
-
-
 .nav-link {
     transition: .5s;
-    color: var(--second-color);
+    color: var(--grandson-color);
 }
-
-
 .nav-link:hover {
     color: var(--grandson-color);
 }
@@ -78,8 +75,8 @@
 }
 .language {
      
-    background-color: var(--second-color);
-     color: var(--grandson-color);
+    background-color: var(--grandson-color);
+     color: var(--second-color);
     height: 40px;
     border-radius: 10px;
     padding: 0  5px;
@@ -89,24 +86,34 @@
 }
 .language:hover {
     cursor: pointer;
-    background-color: var(--second-color);
+    color: var(--second-color);
+    background-color: #e9bd0f
 }
 .btn.btn-primary {
     transition: .5s;
     cursor: pointer;
     border: none;
     outline: none;
-    background-color: var(--second-color);
+    background-color:var(--grandson-color);
+    color: var(--second-color);
 }
 .btn.btn-primary:hover  {
-     background-color: var(--grandson-color);
+     background-color: #e9bd0f;
 }
 .btn.btn-outline-primary {
-    border-color: var(--second-color);
+    border-color: var(--grandson-color);
     color: var(--grandson-color);
 }
 .btn.btn-outline-primary:hover {
-    background-color: var(--second-color);
+    background-color: var(--grandson-color);
+    color: var(--second-color);
+}
+.bi.bi-person-add {
+  background-color: var(--grandson-color);
+}
+
+.bi.bi-person-add:hover {
+    color: var(--second-color);
 }
 
 
