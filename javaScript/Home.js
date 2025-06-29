@@ -149,3 +149,21 @@ ReadMoreStuding.addEventListener("click", () => {
     option.textContent = country;
     selectElement.appendChild(option);
   });
+
+
+  // navBar
+const navbar = document.querySelector('.navbar-fade');
+let isHidden = false;
+let showTimeout;
+
+window.addEventListener('scroll', () => {
+  if (!isHidden) {
+    isHidden = true;
+    navbar.classList.add('navbar-hidden');
+
+    clearTimeout(showTimeout); 
+    showTimeout = setTimeout(() => {
+      navbar.classList.remove('navbar-hidden');
+    }, 3000);
+  }
+});

@@ -5,15 +5,39 @@
 }
 
 .nav {
+
     height: 90px;
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
     align-items: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-    margin: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;   
+    z-index: 999;
+    background-color: var(--Parent-color);
+    
 
 }
+
+.navbar-fade {
+  transition: top 0.5s ease, opacity 0.5s ease;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+.navbar-hidden {
+  top: -100px;
+  opacity: 0;
+}
+
+
+.nav-pills .nav-link.active  {
+    background-color: var(--second-color);
+} 
 
 
 .nav-link {
