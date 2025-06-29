@@ -48,46 +48,35 @@
 
   autoScroll();
 
-  
 
+  // UNI Card Slider 
+const slider2 = document.getElementById("slider2");
+slider2.innerHTML += slider2.innerHTML;
 
+let position2 = 0;
+const speed2 = 1;
+let isPaused2 = false;
 
-
- const slider2 = document.getElementById('slider2');
-
-  slider2.innerHTML += slider2.innerHTML;
-
-  let position2 = 0;
-  let speed2 = 0.5; 
-
-  let animationId;
-
-  function step() {
+function autoScroll2() {
+  if (!isPaused2) {
     position2 -= speed2;
-
-    const maxScroll = slider2.scrollWidth / 2;
-
-    if (Math.abs(position) >= maxScroll) {
+    if (Math.abs(position2) >= slider2.scrollWidth / 2) {
       position2 = 0;
     }
-
     slider2.style.transform = `translateX(${position2}px)`;
-
-    animationId = requestAnimationFrame(step);
   }
+  requestAnimationFrame(autoScroll2);
+}
 
-  step();
+slider2.addEventListener("mouseenter", () => {
+  isPaused2 = true;
+});
 
-  slider2.addEventListener('mouseenter', () => {
-    cancelAnimationFrame(animationId);
-  });
+slider2.addEventListener("mouseleave", () => {
+  isPaused2 = false;
+});
 
-  // استئناف الحركة عند خروج الماوس
-  slider2.addEventListener('mouseleave', () => {
-    step();
-  });
-
-
+autoScroll2();
 
   // Events
 let RedServesis = document.querySelector(".cta1");

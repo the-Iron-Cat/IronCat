@@ -253,7 +253,7 @@
             width: max-content;
             gap: 100px;
             will-change: transform;
-            animation: scrollCards 20s linear infinite;
+            animation: scrollCards 60s linear infinite;
         }
 
         .card1 {
@@ -428,7 +428,6 @@
 }
 
 
-/*******Card*********/
 
 
 
@@ -578,22 +577,25 @@
 
 
 
-/************/
+/*****UNI Card*******/
  .UniCardContinar {
     text-align: center;
     margin-top: 50px;
     overflow: hidden;
   }
 
-  .UniSlider {
-    gap: 20px;
-    padding: 20px;
-    width: max-content;
-    display: flex;
-    align-items: center;
-    /* إزالة أنيميشن CSS */
-  }
+.UniSlider_Wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
+.UniSlider {
+  display: flex;
+  width: max-content;
+  gap: 60px;
+  will-change: transform;
+}
   .card {
     min-width: 280px; 
     width: 280px;
@@ -717,7 +719,8 @@
   justify-content: space-between;
   align-items: center;
   height: 500px;
-} 
+}
+
 
 #Book_Button {
   height: 500px;
