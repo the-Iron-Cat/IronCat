@@ -40,11 +40,13 @@
     color: var(--second-color);
 } 
 .nav-link {
+    margin-left: 10px;
     transition: .5s;
-    color: var(--grandson-color);
+    color: var(--Parent-color)
 }
 .nav-link:hover {
-    color: var(--grandson-color);
+    background-color: var(--grandson-color);
+    color: var(--second-color)
 }
 .A {
     margin-left: 20px;

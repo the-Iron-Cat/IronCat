@@ -95,9 +95,6 @@ ReadMoreStuding.addEventListener("click", () => {
 });
 
 
-
-
-
   // navBar
 const navbar = document.querySelector('.navbar-fade');
 let isHidden = false;
@@ -114,3 +111,23 @@ window.addEventListener('scroll', () => {
     }, 3000);
   }
 });
+
+
+const backToTopButton = document.getElementById('backToTop');
+        
+        // إظهار/إخفاء الزر حسب موضع الصفحة
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 200) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        // العودة لأعلى الصفحة عند النقر
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
