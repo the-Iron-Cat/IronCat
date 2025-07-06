@@ -91,7 +91,7 @@ toUni.addEventListener("click", () => {
 
 let ReadMoreStuding = document.querySelector(".cta2");
 ReadMoreStuding.addEventListener("click", () => {
-      window.location.href = "Studying.html";
+      window.location.href = "./Second_Pages/Studying.html";
 });
 
 

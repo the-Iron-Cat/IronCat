@@ -1,3 +1,7 @@
+// About page + 
+// Remove the our Schools and add About
+// add fotter and Contact Us evertone the pages 
+
 
 fotter مخطط ال    
 /////////////////////////////////////////////
