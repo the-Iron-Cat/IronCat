@@ -1147,7 +1147,7 @@
 
 .footer-divider {
   height: 1px;
-  background-color: var(--grandson-color); /* رمادي فاتح */
+  background-color: var(--grandson-color); 
   box-shadow: 0 0 4px var(--grandson-color);
   border: none;
   margin: 1px auto;
