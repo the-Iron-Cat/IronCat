@@ -202,7 +202,7 @@ const countryData = {
         const countries1 = Object.keys(countryData);
         const countrySelect = document.getElementById("countrySelect");
         const countryCodeSelect = document.getElementById("countryCodeSelect");
-
+        
         countries1.forEach(country => {
             const option = document.createElement("option");
             option.value = country;

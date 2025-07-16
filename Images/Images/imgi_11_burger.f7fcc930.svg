@@ -1,0 +1,12 @@
+<svg id="Component_2_1" data-name="Component 2 – 1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Rectangle_439" data-name="Rectangle 439" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="50" height="50" rx="25" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" fill="none"/>
+  </g>
+  <g id="Rectangle_8393" data-name="Rectangle 8393" fill="none" stroke="#fff" stroke-width="1">
+    <rect width="50" height="50" rx="25" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="49" rx="24.5" fill="none"/>
+  </g>
+  <rect id="Rectangle_8395" data-name="Rectangle 8395" width="20" height="2" rx="1" transform="translate(17.222 31.363) rotate(-45)" fill="#fff"/>
+  <rect id="Rectangle_8396" data-name="Rectangle 8396" width="20" height="2" rx="1" transform="translate(18.636 17.221) rotate(45)" fill="#fff"/>
+</svg>
