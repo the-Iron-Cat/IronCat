@@ -96,11 +96,8 @@ const universities = [
     logoImage: "../Images/Images2/imgi_104_image.webp"
   }
 ];
-
-
-const container = document.getElementById("cardsContainer");
+const container = document.getElementById("cardsContainer"); // Parent
 const filterButtons = document.querySelectorAll(".Flbtn");
-
 function RenderCard(filter) {
   container.innerHTML = "";
   universities.forEach(e => {
@@ -118,9 +115,7 @@ function RenderCard(filter) {
             <a href="../HTML/Second_Pages/Studying.html" class="button">${e.link}</a>
           </div>
         `;
-
         container.appendChild(card); 
-
       }
   });
 }

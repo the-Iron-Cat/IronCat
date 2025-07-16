@@ -182,6 +182,10 @@
   background-color: var(--second-color);
   color: var(--grandson-color);
   border: none;
+  padding: 5px;
+  width:100px;
+  border:  var(--grandson-color) 3px solid;
+
 }
 .Flbtn { 
   background-color: transparent;
