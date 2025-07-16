@@ -144,6 +144,14 @@
             transform: scale(0.95);}
 
 
+.cards-container {
+     margin-top: 50px;
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
 .bodyContinar {
     margin-top: 100px;
 }
@@ -187,9 +195,3 @@
 }
 
 
-.cards-container {
-      display: flex;
-      gap: 50px;
-      flex-wrap: wrap;
-      justify-content: center;
-}
