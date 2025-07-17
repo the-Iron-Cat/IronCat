@@ -15,12 +15,12 @@
       font-weight: 300;
       text-align: center;
       margin-top: 50px;
-      color: #243671;
+      color:var(--second-color);
     }
 
     .bold, .bold2 {
       font-weight: 700;
-      color: #F9CD17;
+      color: var(--grandson-color);
   }
 /*******Card Slider**********/
 .card-grid {
@@ -96,7 +96,7 @@ height: 250px;
             height: 160%;
             width: 160%;
             border-radius: inherit;
-            background: linear-gradient(to right, #243671, #243671);
+            background: linear-gradient(to right, var(--second-color), var(--second-color));
             transform-origin: center;
             animation: moving 4.8s linear infinite paused;
             transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
