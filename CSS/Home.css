@@ -1,12 +1,12 @@
 :root {
-     /* --second-color: #243671;
+     --second-color: #243671;
       --Parent-color: #F1F1F2;
       --grandson-color: #F9CD17;
       */
 
-       --second-color: #0E3746;
-      --Parent-color: #F4F2EC;
-      --grandson-color: #EAE8DC ;
+       --second-color: #EAE8DC;
+      --Parent-color: #0E3746;
+      --grandson-color: #F4F2EC;
 
     }
 
