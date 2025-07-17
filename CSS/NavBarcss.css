@@ -1,11 +1,11 @@
 :root {
-    --second-color: #243671; 
-    --Parent-color:  #F1F1F2;
-    --grandson-color:#F9CD17; 
+    --second-color: #0E3746;
+      --Parent-color: #F4F2EC  ;
+
+      --grandson-color: #E6CCB2 ;
 }
 
 .nav {
-    
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -17,9 +17,6 @@
     width: 100%;   
     z-index: 999;
     background-color: var(--second-color);
-
-    
-
 }
 
 .navbar-fade {
@@ -90,7 +87,7 @@
 .language:hover {
     cursor: pointer;
     color: var(--second-color);
-    background-color: #e9bd0f
+    background-color: #E6CCB2;
 }
 .btn.btn-primary {
     transition: .5s;
@@ -101,7 +98,7 @@
     color: var(--second-color);
 }
 .btn.btn-primary:hover  {
-     background-color: #e9bd0f;
+     background-color: #96e2af;
 }
 .btn.btn-outline-primary {
     border-color: var(--grandson-color);

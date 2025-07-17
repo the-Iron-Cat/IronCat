@@ -4,9 +4,9 @@
       --grandson-color: #F9CD17;
       */
 
-       --second-color: #EAE8DC;
-      --Parent-color: #0E3746;
-      --grandson-color: #F4F2EC;
+       --second-color: #0E3746;
+      --Parent-color: #F4F2EC;
+      --grandson-color: #EAE8DC ;
 
     }
 
@@ -134,8 +134,8 @@
 .TitleContinar {
     position: relative;
     width: 590px;
-    bottom: 90px;
     left: 55px;
+    top: 150px;
    
 }
 #TCO {
@@ -143,7 +143,7 @@
     font-size: 40px;
 }
 #PTCO{
-    color: #f99e17;
+    color: var(--second-color);
     letter-spacing: 2px;
     font-weight: bolder;
 
@@ -152,9 +152,17 @@
     width: 300px;
     height: 300px;
 }
-#IM1 {
-    width: 300px;
-    height: 300px;
+#LOGOHOME {
+  position: relative; 
+  top: 140px;
+  padding: 10px; 
+  text-align: center;
+  border-radius: 30px;
+  left: 50px;
+  background-color: var(--second-color);
+  color: var(--grandson-color);
+    width: 500px;
+    
 }
 /****Search Button******/
 .box {
@@ -236,7 +244,7 @@
 }
 .Box {
     background-color: transparent;
-    border-radius: 5px; 
+    border-radius:35px; 
     border: solid var(--second-color) 5px ;
     padding: 20px;
     width: 300px ;
@@ -254,7 +262,7 @@
      font-size: 40px;
 } 
 #pi {
-    color: #f99e17;
+    color: var(--second-color);
     font-weight: bolder; 
     letter-spacing: 1px;
 } 
@@ -270,6 +278,10 @@
     width: 500px;
 }
 #IM3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
     height: 500px;
     width: 500px;
 }
@@ -385,7 +397,7 @@
             height: 160%;
             width: 160%;
             border-radius: inherit;
-            background: linear-gradient(to right, #243671, #243671);
+            background: linear-gradient(to right, var(--second-color), var(--second-color));
             transform-origin: center;
             animation: moving 4.8s linear infinite paused;
             transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
@@ -399,7 +411,7 @@
 
         .card1:hover .content h1,
         .card1:hover .content .heading {
-            color:#f99e17;
+            color:var(--grandson-color);
         }
 
         .card1:hover .content {
@@ -574,7 +586,7 @@
   text-decoration: none;
   font-size: 25px;
   color: white;
-  background: #6225e6;
+  background: var(--second-color);
   transition: 1s;
   box-shadow: 6px 6px 0 black;
   transform: skewX(-15deg);
@@ -642,7 +654,7 @@
   }
 
   50% {
-    fill: #fbc638;
+    fill: var(--grandson-color);
   }
 
   100% {
@@ -682,7 +694,7 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
-    background-color: #fffffe;
+    background-color: white;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -713,7 +725,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 4px solid #ffffff;
+    border: 4px solid white;
     margin-top: 30px;
     overflow: hidden;
     transition: all 0.5s ease;
@@ -742,7 +754,7 @@
   .card-info span {
     font-weight: 600;
     font-size: 20px; 
-    color: #161A42;
+    color: var(--grandson-color);
     margin-top: 15px;
     line-height: 1.2;
   }
@@ -755,8 +767,8 @@
 
   .UniCardButton {
     text-decoration: none;
-    background-color: #243671;
-    color: #F9CD17;
+    background-color: var(--second-color);
+    color: var(--grandson-color);
     padding: 8px 20px;
     border-radius: 5px;
     border: 1px solid white;
@@ -1168,7 +1180,7 @@
 
 }
 #T {
-  color: white;
+  color: var(--Parent-color);
   text-decoration: none;
   font-weight: bolder ;
   transition: .5s;
@@ -1209,7 +1221,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #243671;
+  background-color: var(--grandson-color);
   border: 2px solid var(--Parent-color);
   transition: all 0.45s;
 }

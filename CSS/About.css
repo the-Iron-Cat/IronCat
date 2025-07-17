@@ -1,7 +1,8 @@
 :root {
-      --second-color: #243671;
-      --Parent-color: #F1F1F2;
-      --grandson-color: #F9CD17;
+        --second-color: #0E3746;
+      --Parent-color: #F4F2EC  ;
+
+      --grandson-color: #E6CCB2 ;
     }
 
     body {
@@ -83,7 +84,7 @@ height: 250px;
             height: 160%;
             width: 160%;
             border-radius: inherit;
-            background: linear-gradient(to right, #243671, #243671);
+            background: linear-gradient(to right, var(--second-color), var(--second-color));
             transform-origin: center;
             animation: moving 4.8s linear infinite paused;
             transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
@@ -97,7 +98,7 @@ height: 250px;
 
         .card:hover .content h1,
         .card:hover .content .heading {
-            color:#f99e17;
+            color:var(--second-color);
         }
 
         .card:hover .content {
