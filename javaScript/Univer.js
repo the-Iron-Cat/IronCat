@@ -96,8 +96,10 @@ const universities = [
     logoImage: "../Images/Images2/imgi_104_image.webp"
   }
 ];
+
 const container = document.getElementById("cardsContainer"); // Parent
 const filterButtons = document.querySelectorAll(".Flbtn");
+
 function RenderCard(filter) {
   container.innerHTML = "";
   universities.forEach(e => {
@@ -119,6 +121,7 @@ function RenderCard(filter) {
       }
   });
 }
+
 filterButtons.forEach(btn => {
     btn.addEventListener("click" ,() => {
      filterButtons.forEach(btn => btn.classList.remove("active"));
