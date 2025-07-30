@@ -13,6 +13,13 @@
     background-color: var(--second-color);
 
 }
+.bx.bx-education { 
+    color: var(--Parent-color);
+    font-weight: bolder;
+    font-size: 50px;
+    cursor: pointer; 
+     
+}
 
 .navbar-fade {
   transition: top 0.5s ease, opacity 0.5s ease;
@@ -62,14 +69,12 @@
     color: var(--grandson-color);
 } 
 .OptionContinar {
-  
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width:150px  ;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.language {
-     
+.language { 
     background-color: var(--grandson-color);
      color: var(--second-color);
     height: 40px;
