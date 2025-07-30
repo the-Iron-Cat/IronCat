@@ -1,9 +1,4 @@
-:root {
-     --second-color: #0E3746;
-      --Parent-color: #F4F2EC ;
-      --grandson-color: #E6CCB2;
-}
-
+@import "../CSS/Them.css"; 
 .nav {
     height: 90px;
     display: flex;
@@ -16,8 +11,6 @@
     width: 100%;   
     z-index: 999;
     background-color: var(--second-color);
-
-    
 
 }
 

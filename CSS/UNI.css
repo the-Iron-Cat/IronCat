@@ -1,18 +1,13 @@
-:root {
-        --second-color: #0E3746;
-      --Parent-color: #F4F2EC  ;
-      --grandson-color: #E6CCB2 ;
-    }
+@import "../CSS/Them.css";
 
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: var(--Parent-color);
     }
   
- /* الحاوية للكروت */
     
 
-         .card {
+.card {
             width: 350px;
             height: 300px;
             display: flex;
