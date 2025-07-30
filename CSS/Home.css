@@ -505,9 +505,6 @@
 }
 
 
-
-
-
 /********Studing***********/
 .start_Studying {
   border: var(--second-color) solid 3px;
@@ -655,7 +652,10 @@
 
 
 
-
+.Book_consultation { 
+  background-color: red;
+  display: felx;
+}
 #Book_Button {
   height: 500px;
   width: 500px;
