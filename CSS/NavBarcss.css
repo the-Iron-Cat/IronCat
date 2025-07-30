@@ -74,21 +74,23 @@
   justify-content: space-around;
   align-items: center;
 }
-.language { 
-    background-color: var(--grandson-color);
-     color: var(--second-color);
-    height: 40px;
-    border-radius: 10px;
-    padding: 0  5px;
-    border: none;
-    outline: none ;
-    transition: .5s;
+.language {
+  color: white;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  font-size: inherit;
+  transition: .3s;
 }
 .language:hover {
-    cursor: pointer;
-    color: var(--second-color);
-    background-color: #E6CCB2;
+  cursor: pointer;
+  color:#E6CCB2;
+  background: none;
+  border: none;
 }
+
+
 .btn.btn-primary {
     transition: .5s;
     cursor: pointer;
