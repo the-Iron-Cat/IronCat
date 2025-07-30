@@ -114,7 +114,7 @@ function RenderCard(filter) {
           <div class="card-info">
             <span>${e.name} University</span>
             <p>${e.country}</p>
-            <a href="../HTML/Second_Pages/Studying.html" class="button">${e.link}</a>
+            <a href="../HTML/Second_Pages/Studying.html" class="button55">${e.link}</a>
           </div>
         `;
         container.appendChild(card); 

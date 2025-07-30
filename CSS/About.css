@@ -1,99 +1,34 @@
-:root {
-  --second-color: #0E3746;       /* لون الشريط */
-  --Parent-color: #F4F2EC;       /* خلفية الصفحة */
-  --grandson-color: #E6CCB2;     /* لون العنصر المفعّل */
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--Parent-color);
-  margin: 0;
-  font-size: 20px;
-}
-
-/* الشريط العلوي */
-.navbar {
- position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--second-color);
-  padding: 10px 20px;
-  border-bottom: 5px solid var(--grandson-color);
- border-radius: 5px;
- font-weight: bold;
-  transition: 0.3s ease;
-    border: none;
-
-
-}
-
-/* الجانب الأيسر (فارغ أو شعار مستقبلاً) */
-.nav-side.left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-/* الوسط */
-.nav-center {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-   
-}
-
-/* الطرف اليمين */
-.nav-side.right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-}
-/* زر اللغة */
-.language {
-  border: none;
-  background: none;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* أيقونة */
-svg {
-  color: white;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-svg:hover {
-  transform: scale(1.1);
-}
-
-
-.nav-link {
-  border-radius: 10px; /* أو أي قيمة مثل 5px أو 15px */
-  padding: 10px 15px;
-}
-
-
-
+@import "../CSS/Them.css";
 .center-wrapper {
-  display: flex;
+  margin-top: 50px;
+   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   text-align: center;
 }
-
-
+ body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--Parent-color);
+    }
+.bxr.bx-florist {
+     font-size: 80px;
+  color: var(--second-color);
+}
 .text-box {
   padding: 2rem;
   margin-bottom: 40px; 
   color: rgb(14, 12, 91);
   margin-top: 80px;
+}
+.titl2 { 
+  font-weight: bolder; 
+}
+#AboutTitle { 
+  color: var(--second-color);
+  font-weight: bolder; 
+  font-size: 20px;
 }
 
 .map-iframe {
@@ -102,6 +37,8 @@ svg:hover {
   border: 0;
 }
 
+
+/*****************Fotter******************/
 
 /*****************Fotter******************/
 .Fotter_Continar {
@@ -163,7 +100,7 @@ svg:hover {
 
 .footer-divider {
   height: 1px;
-  background-color: var(--grandson-color); /* رمادي فاتح */
+  background-color: var(--grandson-color); 
   box-shadow: 0 0 4px var(--grandson-color);
   border: none;
   margin: 1px auto;
@@ -178,7 +115,7 @@ svg:hover {
 
 }
 #T {
-  color: white;
+  color: var(--Parent-color);
   text-decoration: none;
   font-weight: bolder ;
   transition: .5s;
@@ -219,7 +156,7 @@ svg:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #243671;
+  background-color: var(--grandson-color);
   border: 2px solid var(--Parent-color);
   transition: all 0.45s;
 }
