@@ -1,135 +1,597 @@
 :root {
-     --second-color: #0E3746;
-      --Parent-color: #F4F2EC  ;
-      --grandson-color: #E6CCB2 ;
-    }
+  --second-color: #0E3746;       /* لون الشريط */
+  --Parent-color: #F4F2EC;       /* خلفية الصفحة */
+  --grandson-color: #E6CCB2;     /* لون العنصر المفعّل */
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--Parent-color);
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--Parent-color);
+  margin: 0;
+  font-size: 20px;
+}
 
-    /*******Card Slider**********/
-.card-grid {
-    text-align: center;
-  height: 470px;
-  position: relative;
-   display: flex;
+/* الشريط العلوي */
+.navbar {
+ position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--second-color);
+  padding: 10px 20px;
+  border-bottom: 5px solid var(--grandson-color);
+ border-radius: 5px;
+ font-weight: bold;
+  transition: 0.3s ease;
+    border: none;
+
+
+}
+
+/* الجانب الأيسر (فارغ أو شعار مستقبلاً) */
+.nav-side.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* الوسط */
+.nav-center {
+  display: flex;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  gap: 15px;
+   
+}
+
+/* الطرف اليمين */
+.nav-side.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+/* زر اللغة */
+.language {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* أيقونة */
+svg {
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+svg:hover {
+  transform: scale(1.1);
+}
+
+
+.nav-link {
+  border-radius: 10px; /* أو أي قيمة مثل 5px أو 15px */
+  padding: 10px 15px;
+}
+
+
+
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+.text-box {
+  padding: 2rem;
+  margin-bottom: 40px; 
+  color: rgb(14, 12, 91);
+  margin-top: 80px;
+}
+
+.map-iframe {
+  width: 900px;
+  height: 450px;
+  border: 0;
+}
+
+
+/*****************Fotter******************/
+.Fotter_Continar {
+  border-top: var(--grandson-color) solid 4px ;
+  background-color: var(--second-color);
+  height: 520px;
+  margin-top: 100px;
   
 }
-#OurSer {
+.Futter_Title_Text {
+  color: var(--grandson-color);
+  font-weight: bolder;
   text-align: center;
-  font-size: bolder;
-  color: var(--second-color);
+  margin-top: 50px;
 }
-#POR {
-    color: var(--grandson-color);
-    text-align: center;
+.Fotter_Body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
 }
 
-.card {
+.footer_Logo {
+  width: 350px;
+  padding: 30px;
+}
+.About_Fotter{
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 60px;
+  color: var(--Parent-color);
+}
+.fotterPraagraph {
+  color: var(--Parent-color);
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.link_Title {
+  text-align: center;
+  font-size: 25px;
+  color: var(--Parent-color);
+  font-weight: bolder;
+}
+.fotter_Links2 {
   position: relative;
+  bottom: 25px;
+}
+.Site_Box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 600px;
-height: 250px;
-  padding: 2px;
-  border-radius: 24px;
-  overflow: hidden;
-  line-height: 1.6;
-  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-  margin-top: 10%;
 }
-        .content {
+.Site_Box .bxr {
+  padding-bottom: 15px;
+  padding-right: 5px;
+  color: var(--Parent-color);
+
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: var(--grandson-color); /* رمادي فاتح */
+  box-shadow: 0 0 4px var(--grandson-color);
+  border: none;
+  margin: 1px auto;
+  width: 90%;
+}
+.siteContinar {
+  position: relative;
+  bottom: 12px;
+} 
+.fotterList  {
+  list-style: none;
+
+}
+#T {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder ;
+  transition: .5s;
+} 
+#T:hover {
+  color: var(--grandson-color);
+}
+.siteText { 
+  color: var(--Parent-color);
+  text-decoration: none;
+  font-weight: bolder;
+
+  letter-spacing: 1px;
+}
+.OurSite {
+  color: var(--Parent-color);
+  font-weight: bolder; 
+}
+
+
+.Social_mida {
+  height: 50px;
+  margin-top: 20px;
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--second-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #243671;
+  border: 2px solid var(--Parent-color);
+  transition: all 0.45s;
+}
+
+.button:hover {
+  transform: rotate(360deg);
+  transform-origin: center center;
+  background-color: var(--grandson-color);
+  color: var(--second-color);
+    border: 2px solid var(--grandson-color);
+
+}
+
+.button:hover .btn-svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+    brightness(103%) contrast(103%);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Fotte_Bottom {
+  background-color: var(--grandson-color);
+  color: var(--second-color);
+  font-weight: bolder; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 40px;
+}
+#copyRighyt {
+  padding-top:20px ;
+}
+
+
+/***whatsapp Button*****/
+.whatsapp-button {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #25D366;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            animation: sway 2s infinite alternate;
+            width: 70px;
+            height: 70px;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 50px;
-            padding: 34px;
-            border-radius: 22px;
-            color: #000000;
-            overflow: hidden;
-            background: #ffffff;
-            width: 100%;
-            height: 100%;
-            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+            justify-content: center;
+            align-items: center;
+            perspective: 500px;
+            transition: all 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
         }
-
-        .content #cardTitle {
-            font-weight: 700;
-            
-           
-            z-index: 1;
-            color: var(--grandson-color);
-            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .content .heading {
-            z-index: 1;
+        
+        .whatsapp-button.show {
             opacity: 1;
-            font-size: 18px;
-            color: var(--grandson-color);
-            transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+            visibility: visible;
         }
-
-        .card::before {
-            content: "";
+        
+        .whatsapp-button:hover {
+            transform: translateY(-50%) rotate(360deg) scale(1.1);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+            background-color: #128C7E;
+        }
+        
+        @keyframes sway {
+            0% {
+                transform: translateY(-50%) rotate(-5deg);
+            }
+            100% {
+                transform: translateY(-50%) rotate(5deg);
+            }
+        }
+        
+        .no-link-style {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp-icon {
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+        
+        .whatsapp-button:hover .whatsapp-icon {
+            transform: scale(1.2);
+        }
+        
+        .follow-text {
+            color: white;
             position: absolute;
-            height: 160%;
-            width: 160%;
-            border-radius: inherit;
-            background: linear-gradient(to right, var(--second-color), var(--second-color));
-            transform-origin: center;
-            animation: moving 4.8s linear infinite paused;
-            transition: all 0.88s cubic-bezier(0.23, 1, 0.32, 1);
+            right: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(37, 211, 102, 0.9);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+        
+        .whatsapp-button:hover .follow-text {
+            opacity: 1;
+            transform: translateY(-50%) translateX(-10px);
         }
 
-        .card:hover::before {
-            animation-play-state: running;
-            z-index: -1;
-            width: 20%;
+.Important_Specializations_Continar {
+  margin-top: 200px;
+}
+.Specializations_Title {
+  text-align: center;
+  color: var(--second-color);
+  font-weight: bolder;
+}
+.Specializations_paragraph {
+  color: var(--second-color);
+  font-weight: bolder; 
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.Specializations_span {
+  color: var(--grandson-color);
+
+}
+.Spestion {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+    gap: 30px;
+    padding: 20px;
+}
+.Specializations_Tilte {
+  text-align: center;
+}
+
+.service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .card:hover .content h1,
-        .card:hover .content .heading {
-            color:var(--second-color);
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent-color);
         }
 
-        .card:hover .content {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
-        .card:hover {
-            box-shadow: 0rem 6px 13px rgba(10, 60, 255, 0.1),
-                        0rem 24px 24px rgba(10, 60, 255, 0.09),
-                        0rem 55px 33px rgba(10, 60, 255, 0.05),
-                        0rem 97px 39px rgba(10, 60, 255, 0.01),
-                        0rem 152px 43px rgba(10, 60, 255, 0);
-            scale: 1.05;
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: var(--bg-color);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            position: relative;
         }
 
-        @keyframes scrollCards {
-            0% {
-                transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
         }
 
-        @keyframes moving {
-            0% {
-                transform: rotate(0);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
+        .service-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--accent-color);
+            transition: all 0.3s ease;
         }
 
-    
+        .service-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: #666;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .computer-engineering {
+            --accent-color: #10B981;
+            --bg-color: #ECFDF5;
+        }
+
+        .engineering-specs {
+            --accent-color: #EF4444;
+            --bg-color: #FEF2F2;
+        }
+
+        .ai-software {
+            --accent-color: #06B6D4;
+            --bg-color: #ECFEFF;
+        }
+
+        .medical-engineering {
+            --accent-color: #EC4899;
+            --bg-color: #FDF2F8;
+        }
+
+        .natural-therapy {
+            --accent-color: #8B5CF6;
+            --bg-color: #F3F4F6;
+        }
+
+        .medical-specs {
+            --accent-color: #F59E0B;
+            --bg-color: #FFFBEB;
+        }
+
+        .marketing-advertising {
+            --accent-color: #06B6D4;
+            --bg-color: #ECFEFF;
+        }
+
+        .business-management {
+            --accent-color: #F59E0B;
+            --bg-color: #FFFBEB;
+        }
+
+        .admin-specs {
+            --accent-color: #6366F1;
+            --bg-color: #EEF2FF;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 50px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+         }
+
+/*****Questions*****/
+
+.Questions_Continar { 
+  margin-top: 80px;
+  width: 100%; 
+  height: 700px;
+} 
+.Image_Questions_Continar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.Questions_Title {
+  text-align: center;
+  color: var(--second-color);
+  font-weight: bolder;
+} 
+.Questions_span {
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--grandson-color);
+}
+
+.accordion {
+  width: 50%;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--second-color) !important;
+      border-radius: 10px;
+
+}
+.accordion-button:not(.collapsed) {
+    background-color: var(--grandson-color);
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+  .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ff0000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+        
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+  .accordion-item {
+            margin-bottom: 5px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accordion-body {
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+            padding: 20px;
+            font-size: 16px;
+        }
+        
+        .accordion-item:not(:last-child) {
+            border-bottom: none;
+        }
+        
+        .accordion-button {
+            background-color: #ffffff;
+            color: #333;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: #0d6efd;
+            color: white;
+            box-shadow: none;
+        }
+        
+        .accordion-button:hover {
+            background-color: #e9ecef;
+        }
+        
+      .accordion-button:not(.collapsed):hover {
+           background-color: #0b5ed7;
+      }
+     .accordion-item {
+       margin-bottom: 15px;
+     }    
+
+     
+.titl2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: var(--second-color);  /* تطبّق على "ABOUT" */
+}
+
+.bol2{
+  font-weight: 700;
+  color: var(--grandson-color); /* تطبّق على "US" */
+}
